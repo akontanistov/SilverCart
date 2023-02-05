@@ -4,6 +4,11 @@ namespace SilverCart.Initialization
 {
     public static class InitializationItems
     {
+        public static Currency[] Currencies = {
+            new Currency() { Code = "USD", Symbol = '$'},
+            new Currency() { Code = "EUR", Symbol = '€'}
+        };
+
         public static Language[] Languages = {
             new Language() { Code = "bel", CodeISO = "be", NameISO = "Belarusian", NameNative = "Беларуская мова"},
             new Language() { Code = "bul", CodeISO = "bg", NameISO = "Bulgarian", NameNative = "bălgarski ezik"},

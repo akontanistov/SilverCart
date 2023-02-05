@@ -8,9 +8,9 @@ namespace SilverCart.Entities
     /// </summary>
     public class Language
     {
-        [PrimaryKey] [NotNull] [StringLength(3)]
+        [PrimaryKey, NotNull]
         public string Code { get; set; }
-        [NotNull] [StringLength(2)]
+        [NotNull]
         public string CodeISO { get; set; }
         [NotNull]
         public string NameISO { get; set; }
